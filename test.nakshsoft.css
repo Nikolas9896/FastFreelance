@@ -1,6 +1,6 @@
 /*Add 2 class to div*/
 
-
+/* New Label */
 .new-label {
     position: absolute;
     z-index: 9;
@@ -13,7 +13,7 @@
     right: 13px;
     background-position: -91px 0px;
 }
-/*secomnd*/
+/*Hot Label*/
 .sale-label {
     position: absolute;
     z-index: 9;
