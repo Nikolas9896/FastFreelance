@@ -1,0 +1,28 @@
+/*Add 2 class to div*/
+
+
+.new-label {
+    position: absolute;
+    z-index: 9;
+    width: 91px;
+    height: 91px;
+    background: url(http://www.demo.pro.nakshsoft.com/template/template6/assets/img/label.png) 0 0 no-repeat;
+}
+.new-top-right {
+    top: -3px;
+    right: 13px;
+    background-position: -91px 0px;
+}
+/*secomnd*/
+.sale-label {
+    position: absolute;
+    z-index: 9;
+    width: 91px;
+    height: 91px;
+    background: url(http://www.demo.pro.nakshsoft.com/template/template6/assets/img/label.png) 0 0 no-repeat;
+}
+.sale-top-left {
+    top: -3px;
+    left: 13px;
+    background-position: -182px 0;
+}
