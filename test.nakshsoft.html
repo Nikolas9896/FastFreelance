@@ -1,0 +1,1711 @@
+
+<!-- saved from url=(0035)http://test.nakshsoft.com/index.php -->
+<html class="js no-touch history boxshadow csstransforms3d csstransitions video svg webkit chrome win js sticky-header-enabled sticky-header-negative sticky-header-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">/*.lleo_errorSelection *::-moz-selection,
+.lleo_errorSelection *::selection,
+.lleo_errorSelection *::-webkit-selection {
+    background-color: red !important;
+    color: #fff !important;;
+}*/
+
+#lleo_dialog,
+#lleo_dialog * {
+    color: #000 !important;
+    font: normal 13px Arial, Helvetica !important;
+    line-height: 15px !important;
+    margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+	border: none 0 !important;
+	position: static !important;
+	vertical-align: baseline !important;
+	overflow: visible !important;
+	width: auto !important;
+	height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+	float: none !important;
+	visibility: visible !important;
+	text-align: left !important;
+    text-transform: none !important;
+	border-collapse: separate !important;
+	border-spacing: 2px !important;
+    box-sizing: content-box !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+    letter-spacing: normal !important;
+    -webkit-filter: none !important;
+    -moz-filter: none !important;
+    filter: none !important;
+}
+#lleo_dialog *:before,
+#lleo_dialog *:after {
+    content: '';
+}
+
+#lleo_dialog iframe {
+	height: 0 !important;
+	width: 0 !important;
+}
+
+#lleo_dialog {
+    position: absolute !important;
+    background: #fff !important;
+    border: solid 1px #ccc !important;
+    padding: 7px 0 0 !important;
+    left: -999px;
+    top: -999px;
+    width: 440px !important;
+    overflow: hidden;
+    display: block !important;
+    z-index: 999999999 !important;
+    box-shadow: 8px 16px 30px rgba(0, 0, 0, 0.16) !important;
+    border-radius: 3px !important;
+    opacity: 0 !important;
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    transform: translateY(15px);
+}
+#lleo_dialog.lleo_show_small {
+    width: 150px !important;
+}
+#lleo_dialog.lleo_show {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s !important;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s !important;
+    -ms-transition: -ms-transform 0.3s, opacity 0.3s !important;
+    -o-transition: -o-transform 0.3s, opacity 0.3s !important;
+    transition: transform 0.3s, opacity 0.3s !important;
+}
+#lleo_dialog.lleo_collapse {
+    opacity: 0 !important;
+    -webkit-transform: scale(0.25, 0.1) translate(-550px, 100px);
+    -moz-transform: scale(0.25, 0.1) translate(-550px, 100px);
+    -ms-transform: scale(0.25, 0.1) translate(-550px, 100px);
+    -o-transform: scale(0.25, 0.1) translate(-550px, 100px);
+    transform: scale(0.25, 0.1) translate(-550px, 100px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s !important;
+    -moz-transition: -moz-transform 0.4s, opacity 0.4s !important;
+    -ms-transition: -ms-transform 0.4s, opacity 0.4s !important;
+    -o-transition: -o-transform 0.4s, opacity 0.4s !important;
+    transition: transform 0.4s, opacity 0.4s !important;
+}
+#lleo_dialog input::-webkit-input-placeholder {
+    color: #aaa !important;
+}
+#lleo_dialog .lleo_has_pic #lleo_word {
+	margin-right: 80px !important;
+}
+#lleo_dialog #lleo_translationsContainer1 {
+	position: relative !important;
+}
+#lleo_dialog #lleo_translationsContainer2 {
+	padding: 7px 0 0 !important;
+	vertical-align: middle !important;
+}
+#lleo_dialog #lleo_word {
+    color: #000 !important;
+    margin: 0 5px 2px 0 !important;
+    /*float: left !important;*/
+}
+#lleo_dialog .lleo_has_sound #lleo_word {
+    margin-left: 30px !important;
+}
+#lleo_dialog #lleo_text {
+    font-weight: bold !important;
+    color: #d56e00 !important;
+    text-decoration: none !important;
+    cursor: default !important;
+}
+/*
+#lleo_dialog #lleo_text.lleo_known {
+    cursor: pointer !important;
+    text-decoration: underline !important;
+}
+*/
+/*#lleo_dialog #lleo_closeBtn {
+    position: absolute !important;
+    right: 6px !important;
+    top: 5px !important;
+    line-height: 1px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-size: 0 !important;
+    color: #aaa !important;
+    display: block !important;
+	z-index: 9999999999 !important;
+	width: 7px !important;
+	height: 7px !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}*/
+
+#lleo_dialog #lleo_optionsBtn {
+    position: absolute !important; 
+    right: 3px !important;
+    top: 5px !important;
+    line-height: 1px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+    color: #aaa !important;
+    padding: 2px !important;
+	display: none;
+}
+    #lleo_dialog.lleo_optionsShown #lleo_optionsBtn {
+        display: block !important;
+    }
+    #lleo_dialog #lleo_optionsBtn img {
+        width: 12px !important;
+        height: 12px !important;
+    }
+#lleo_dialog #lleo_sound {
+    float: left !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin-left: 9px !important;
+    margin-right: 3px !important;
+    background: 0 0 no-repeat !important;
+    cursor: pointer !important;
+    display: none !important;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAfNJREFUeNq0U01IVFEU/u57Oo5WhBRIBBptykWLYBa2soWiEKQQEbrSFsGbVRQKQc2iFqGitXqvjQxCoCJCqyI0aBUtZILaJNUuYWYWo8HovJ/707nP94bnz0rxwvfOuefd8517fi5TSuE4i50YwZ3l37ZhNlpgzFkaaM/G9sHF1YskNrT+7l4PjMOcb78t2JL71uxgB+2UlfxHTtq5N94fIOh/88kWgWfl73ZCSQkpeGg3H091JY6dI2S00qA/N3KO3dDUYhFgEmZGurG+w9FqApIHsVM7kaTF9Nhn0r8Q7hPWQgIRuNaH3AMUA4W/Lkdh04cpFS43G0TgxQTvCdMETVAk3KynIHwXZU/ge8XDt7KH9bKLjU0P2zVO5LsEpSejVRJ9UR18EtfqKegovs9R3Q6w9c/H1o4Aa2Jwm1lIvn9RJ4w9RdRRzqcYrpwycCll4Cy1lnkS3Bc6vfBg28v8aRIfI78zhB/1GygROH3jLyyzMQ0zlUZuZBSlKkeLoegGtTjYLcJ8pF+NakHOFC2J6w+f25mxSfWrWFF/ShXVPTGvtN14NNkVnxlYWJkgZEL7/vwKr55lKSVnaGYWkuYgrgG172uUv47+U7fw0EHaJXmalUQy/HqO6lBzEsVjJC4Q8kd6TETQpjuaGOvjv8b/AgwA/ij1XMx58NIAAAAASUVORK5CYII=) !important;
+}
+#lleo_dialog .lleo_has_sound #lleo_sound {
+    display: block !important;
+}
+
+#lleo_dialog #lleo_soundWave {
+    border: solid 5px #4495CC !important;
+    border-radius: 5px !important;
+    position: absolute !important;
+    left: -5px !important;
+    top: -5px !important;
+    right: -5px !important;
+    bottom: -5px !important;
+    z-index: 0 !important;
+    opacity: 0.9 !important;
+    display: none !important;
+}
+    #lleo_dialog #lleo_soundWave.lleo_beforePlaying {
+        display: block !important;
+    }
+    #lleo_dialog #lleo_soundWave.lleo_playing {
+        opacity: 0 !important;
+        border-width: 20px !important;
+        border-radius: 30px !important;
+
+        -webkit-transform: scale(1.07,1.1) !important;
+        -moz-transform: scale(1.07,1.1) !important;
+        -ms-transform: scale(1.07,1.1) !important;
+        transform: scale(1.07,1.1) !important;
+
+        -webkit-transition: all 0.6s !important;
+        -moz-transition: all 0.6s !important;
+        -ms-transition: all 0.6s !important;
+        transition: all 0.6s !important;
+    }
+
+
+#lleo_dialog #lleo_picOuter {
+    position: absolute !important;
+    float: right !important;
+    top: 4px;
+    right: 5px;
+    z-index: 9 !important;
+    display: none !important;
+    width: 100px !important;
+}
+    #lleo_dialog.lleo_optionsShown #lleo_picOuter {
+        right: 25px;
+    }
+#lleo_dialog .lleo_has_pic #lleo_picOuter {
+    display: block !important;
+}
+    #lleo_dialog #lleo_picOuter:hover {
+        width: auto !important;
+        z-index: 11 !important;
+    }
+#lleo_dialog #lleo_pic,
+#lleo_dialog #lleo_picBig {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    border: solid 2px #fff !important;
+    -webkit-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+    z-index: 1 !important;
+}
+#lleo_dialog #lleo_pic {
+	position: relative !important;
+    border: none !important;
+	width: 30px !important;
+}
+#lleo_dialog #lleo_picBig {
+    box-shadow: -1px 2px 4px rgba(0,0,0,0.3);
+    z-index: 2 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+    #lleo_dialog #lleo_picOuter:hover #lleo_picBig {
+        visibility: visible !important;
+        opacity: 1 !important;
+        -webkit-transition: opacity 0.3s !important;
+        -webkit-transition-delay: 0.3s !important;
+    }
+#lleo_dialog #lleo_transcription {
+    margin: 0 80px 4px 31px !important;
+    color: #aaaaaa !important;
+}
+#lleo_dialog .lleo_no_trans {
+    color: #aaa !important;
+}
+
+#lleo_dialog .ll-translation-counter {
+	float: right !important;
+    font-size: 11px !important;
+    color: #aaa !important;
+    padding: 2px 2px 1px 10px !important;
+}
+
+#lleo_dialog .ll-translation-text {
+	float: left !important;
+	/*width: 80% !important;*/
+}
+
+#lleo_dialog #lleo_trans a {
+    color: #3F669F !important;
+    text-decoration: none !important;
+    text-overflow: ellipsis !important;
+    padding: 1px 4px !important;
+    overflow: hidden !important;
+    float: left !important;
+    width: 320px !important;
+}
+
+#lleo_dialog .ll-translation-item {
+    color: #3F669F !important;
+    border: solid 1px #fff !important;
+    padding: 3px !important;
+    width: 100% !important;
+    float: left !important;
+	-moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+}
+
+#lleo_dialog .ll-translation-item:hover {
+	border: solid 1px #9FC2C9 !important;
+    background: #EDF4F6 !important;
+	cursor: pointer !important;
+}
+#lleo_dialog .ll-translation-item:hover .ll-translation-counter {
+	color: #83a0a6 !important;
+}
+
+#lleo_dialog .ll-translation-marker {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAWSURBVBhXY7RPm/+fAQkwIXNAbMICAJQ8AkvqWg/SAAAAAElFTkSuQmCC) !important;
+    display: inline-block !important;
+    width: 4px !important;
+    height: 4px !important;
+    margin: 7px 5px 2px 2px !important;
+    float: left !important;
+}
+
+#lleo_dialog #lleo_icons {
+    color: #aaa !important;
+    font-size: 11px !important;
+    background: #f8f8f8 !important;
+    padding: 10px 10px 10px 16px !important;
+}
+#lleo_icons a {
+    display: inline-block !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin: 0 10px -4px 3px !important;
+    text-decoration: none !important;
+    opacity: 0.5 !important;
+    background: url(data:image/png;base64,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) !important;
+}
+#lleo_icons a:hover {
+    opacity: 1 !important;
+}
+#lleo_icons a.lleo_google     {background-position:-34px 0 !important;}
+#lleo_icons a.lleo_multitran  {background-position:-64px 0 !important;}
+#lleo_icons a.lleo_lingvo     {background-position:-51px 0 !important; width: 12px !important;}
+#lleo_icons a.lleo_dict       {background-position:-17px 0 !important;}
+#lleo_icons a.lleo_linguee    {background-position:-81px 0 !important;}
+#lleo_icons a.lleo_michaelis  {background-position:-98px 0 !important;}
+
+#lleo_dialog #lleo_contextContainer {
+    margin: 0 !important;
+    padding: 3px 15px 8px 10px !important;
+    background: #eee !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)) !important;
+    background: -moz-linear-gradient(-90deg, #fff, #eee) !important;
+    border-bottom: solid 1px #ddd !important;
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    display: none !important;
+    overflow: hidden !important;
+}
+#lleo_dialog .lleo_has_context #lleo_contextContainer {
+    display: block !important;
+}
+#lleo_dialog #lleo_context {
+    color: #444 !important;
+    text-shadow: 1px 1px 0 #f4f4f4 !important;
+    line-height: 12px !important;
+    font-size: 11px !important;
+    margin-left: 2px !important;
+}
+#lleo_dialog #lleo_context b {
+    line-height: 12px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    font-size: 11px !important;
+}
+/*#lleo_dialog #lleo_gBrand {
+    color: #aaa !important;
+    font-size: 10px !important;
+    *//*padding-right: 52px !important;*//*
+    padding-bottom: 14px !important;
+    margin: -3px 4px 0 4px !important;
+    background: left bottom url(data:image/png;base64,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) no-repeat !important;
+    display: inline-block !important;
+    float: right !important;
+}
+#lleo_dialog #lleo_gBrand.hidden {
+    display: none !important;
+}*/
+#lleo_dialog #lleo_translateContextLink {
+    color: #444 !important;
+    text-shadow: 1px 1px 0 #f4f4f4 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#ddd)) !important;
+    background: -moz-linear-gradient(-90deg, #f4f4f4, #ddd) !important;
+    border: solid 1px !important;
+    box-shadow: 1px 1px 0 #f6f6f6 !important;
+    border-color: #999 #aaa #aaa #999 !important;
+    -moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+    padding: 0 3px !important;
+    font-size: 11px !important;
+    text-decoration: none !important;
+    margin: 1px 5px 0 !important;
+    display: inline-block !important;
+    white-space: nowrap !important;
+}
+#lleo_dialog #lleo_translateContextLink:hover {
+    background: #f8f8f8 !important;
+}
+#lleo_dialog #lleo_translateContextLink.hidden {
+    visibility: hidden !important;
+}
+
+#lleo_dialog #lleo_setTransForm {
+    display: block !important;
+    margin-top: 3px !important;
+    padding-top: 5px !important;
+    /* Set position and background because the form might be overlapped by an image when no translations */
+    position: relative !important;
+    background: #fff !important;
+    z-index: 10 !important;
+    padding-bottom: 10px !important;
+    padding-left: 16px !important;
+}
+#lleo_dialog .lleo-custom-translation {
+    padding: 4px 5px !important;
+    border: solid 1px #ddd !important;
+	border-radius: 2px !important;
+    width: 90% !important;
+    min-width: 270px !important;
+    background: -webkit-gradient(linear, 0 0, 0 20, from(#f1f1f1), to(#fff)) !important;
+    background: -moz-linear-gradient(-90deg, #f1f1f1, #fff) !important;
+	font: normal 13px Arial, Helvetica !important;
+	line-height: 15px !important;
+}
+#lleo_dialog .lleo-custom-translation:hover {
+    border: solid 1px #aaa !important;
+}
+#lleo_dialog .lleo-custom-translation:focus {
+    background: #FFFEC9 !important;
+}
+
+#lleo_dialog *.hidden {
+    display: none !important;
+}
+
+#lleo_dialog .infinitive{
+    color: #D56E00 !important;
+    text-decoration: none;
+    border-bottom: 1px dotted #D56E00 !important;
+}
+#lleo_dialog .infinitive:hover{
+    border: none !important;
+}
+
+#lleo_dialog .lleo_separator {
+    height: 1px !important;
+    background: #eee;
+    margin-top: 10px !important;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,#eee 8%,rgba(255,255,255,1) 80%) !important;
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, #eee 8%, rgba(255,255,255,1) 80%) !important;
+    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%,#eee 8%,rgba(255,255,255,1) 80%) !important;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,#eee 8%,rgba(255,255,255,1) 80%) !important;
+}
+#lleo_dialog #lleo_trans {
+    /*border-top: 1px solid #eeeeee !important;*/
+    padding: 5px 30px 0 14px !important;
+    zoom: 1;
+}
+
+#lleo_dialog .lleo_clearfix {
+	display: block !important;
+	clear: both !important;
+	visibility: hidden !important;
+	height: 0 !important;
+	font-size: 0 !important;
+}
+
+
+#lleo_dialog #lleo_picOuter table {
+    width: 44px !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    vertical-align: middle !important;
+}
+
+#lleo_dialog #lleo_picOuter td {
+    width: 38px !important;
+    height: 38px !important;
+    /*border: 1px solid #eeeeee !important;*/
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+#lleo_dialog #lleo_picOuter td div {
+	height: 38px !important;
+	overflow: hidden !important;
+}
+
+#lleo_dialog .lleo_empty {
+    margin: 0 5px 7px !important;
+}
+
+#lleo_youtubeExportBtn {
+    margin-left: 10px;
+    height: 24px;
+}
+    #lleo_youtubeExportBtn i {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: 0 0 url(https://d144fqpiyasmrr.cloudfront.net/plugins/all/images/i16.png) !important;
+    }
+    #lleo_youtubeExportBtn .yt-uix-button-content {
+        font-size: 12px;
+        line-height: 2px;
+    }
+
+
+/*** Parsed Lyrics Content *****************************/
+
+.lleo_lyrics tran {
+    background: transparent !important;
+    border-radius: 2px !important;
+    text-shadow: none !important;
+    cursor: pointer !important;
+}
+    .lleo_lyrics tran:hover {
+        color: #fff !important;
+        background: #C77213 !important;
+        -webkit-transition: all 0.1s !important;
+        -moz-transition: all 0.1s !important;
+        -ms-transition: all 0.1s !important;
+        -o-transition: all 0.1s !important;
+        transition: all 0.1s !important;
+    }
+
+.lleo_songName {
+    border: solid 1px #ffd47c;
+    background: #fff1c2;
+    border-radius: 2px;
+}
+
+.lleo_hidden_iframe {
+    visibility: hidden;
+}</style></head><body><div class="modal"><!-- Place at bottom of page --></div>
+
+	
+
+
+    
+         
+		<title>Test Site</title>
+		
+		<!-- metas -->
+		
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<!--/ metas -->
+		
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link href="./test.nakshsoft_files/css" rel="stylesheet" type="text/css">
+		
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="./test.nakshsoft_files/bootstrap.min.css">
+		<link rel="stylesheet" href="./test.nakshsoft_files/fontawesome-all.min.css">
+		<link rel="stylesheet" href="./test.nakshsoft_files/animate.min.css">
+		<link rel="stylesheet" href="./test.nakshsoft_files/simple-line-icons.min.css">
+		<link rel="stylesheet" href="./test.nakshsoft_files/owl.carousel.min.css">
+		<link rel="stylesheet" href="./test.nakshsoft_files/owl.theme.default.min.css">
+		<link rel="stylesheet" href="./test.nakshsoft_files/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="./test.nakshsoft_files/theme.css">
+		<link rel="stylesheet" href="./test.nakshsoft_files/theme-elements.css">
+		<link rel="stylesheet" href="./test.nakshsoft_files/theme-blog.css">
+		<link rel="stylesheet" href="./test.nakshsoft_files/theme-shop.css">
+
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="./test.nakshsoft_files/settings.css">
+		<link rel="stylesheet" href="./test.nakshsoft_files/layers.css">
+		<link rel="stylesheet" href="./test.nakshsoft_files/navigation.css">
+		<link rel="stylesheet" href="./test.nakshsoft_files/component.css">
+		
+		<!-- Demo CSS -->
+
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="./test.nakshsoft_files/default.css"> 
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="./test.nakshsoft_files/custom.css">
+
+		<!-- Head Libs -->
+		<script type="text/javascript" async="" src="./test.nakshsoft_files/ga.js.download"></script><script src="./test.nakshsoft_files/modernizr.min.js.download"></script>
+		
+		
+		<!-- styles -->
+        
+		<!--/ styles -->
+        <!--<link rel="stylesheet" href="template/template2/plugins/bootstrap/css/bootstrap.min.css">
+         <link rel="stylesheet" href="template/template2/css/style1.css">
+        <link rel="stylesheet" href="template/template2/css/jquery.bxslider.css"> -->
+		<!--<link rel="stylesheet" href="template/template2/assets/css/theme.css">-->
+      	<!--<script src="template/template2/plugins/jquery/jquery-1.11.3.min.js"></script>
+        
+        <style type="text/css">
+        #preloader
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #fff;
+            z-index: 1000;
+        }
+        #status {
+            width: 100px;
+            height: 80px;
+            position: absolute;
+            left:0;
+            top: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+            background-image: url(data/template5/10.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+		}
+        </style>-->
+		<style>
+		    .sec-body{overflow: scroll;}
+		    .sec-body table{width: 100%;}
+		    .sec-body::-webkit-scrollbar {width: 0px;background: transparent; /* make scrollbar transparent */}
+		    @media (max-width: 768px){.ul-side-category li{margin-left: 0;} .table-toggle{margin: 20px 0 0;}}
+			
+			.language-selector {font-size: 14px;position: relative;float: left; cursor: pointer;}
+			.language-selector span div {display: inline-block;}
+
+			.language-selector > div {background: #f6f6f6;display: none;left: 0;padding: 0 10px;position: absolute;top: 30px;width: 100%;    z-index: 999;min-width: 140px;}
+			.language-selector ul{list-style: none; padding: 5px;}
+
+			.language-selector > div li {
+			    float: left;
+			    clear: both;
+			}
+			.language-selector > div li a {
+			   color: inherit;
+			}
+			.language-selector ul li.active{color: #0088cc;}
+			.language-selector > div li span {    float: left;    margin-right: 10px;}
+		</style>
+	
+	
+	    <div class="body">
+			<header id="header" data-plugin-options="{&#39;stickyEnabled&#39;: true, &#39;stickyEnableOnBoxed&#39;: true, &#39;stickyEnableOnMobile&#39;: true, &#39;stickyStartAt&#39;: 55, &#39;stickySetTop&#39;: &#39;-55px&#39;, &#39;stickyChangeLogo&#39;: true}" style="min-height: 137px;">
+				<div class="header-body" style="top: -55px;">
+				    <div class="header-top header-top-style-2">
+						<div class="container">
+							<div class="header-row">
+								<div class="header-column justify-content-start">
+									<div class="header-row">
+										<p class="d-none d-md-block">
+											</p><div class="language-selector">
+				                                				                                    <span><img src="./test.nakshsoft_files/en.png"> <div>Language <i class="fa fa-angle-down"></i></div></span>
+				                                                                
+				                                <div>
+				                                    <ul>
+				                                    <li class="active"><a href="http://test.nakshsoft.com/index.php?ln=en"><span><img src="./test.nakshsoft_files/en.png"></span>English</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=vi"><span><img src="./test.nakshsoft_files/vi.png"></span>Vietnamese</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=it"><span><img src="./test.nakshsoft_files/it.png"></span>Italian</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=sp"><span><img src="./test.nakshsoft_files/sp.png"></span>Spanish</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=fr"><span><img src="./test.nakshsoft_files/fr.png"></span>French</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=po"><span><img src="./test.nakshsoft_files/po.png"></span>Polish</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=dt"><span><img src="./test.nakshsoft_files/dt.png"></span>Dutch</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=pr"><span><img src="./test.nakshsoft_files/pr.png"></span>Portuguese</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=sw"><span><img src="./test.nakshsoft_files/sw.png"></span>Swedish</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=gr"><span><img src="./test.nakshsoft_files/gr.png"></span>German</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=th"><span><img src="./test.nakshsoft_files/th.png"></span>Thai</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=cns"><span><img src="./test.nakshsoft_files/cns.png"></span>Chinese</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=ru"><span><img src="./test.nakshsoft_files/ru.png"></span>Russian</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=ar"><span><img src="./test.nakshsoft_files/ar.png"></span>Arabic</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=ro"><span><img src="./test.nakshsoft_files/ro.png"></span>Romanian</a></li><li><a href="http://test.nakshsoft.com/index.php?ln=tr"><span><img src="./test.nakshsoft_files/tr.png"></span>Turkish</a></li>				                                    </ul>
+				                                </div>
+                            				</div>
+										<p></p>
+									<!-- /header- currency -->
+                            <div class="currency pull-left">
+								<div class="curr-selector">
+									<span>Currency
+									<i class="fa fa-angle-down"></i>
+									</span>
+								</div>
+								<div class="currency-list">
+									<ul>
+										<!--<li><a href="#">�</a></li>
+										<li><a href="#">�</a></li>
+										<li><a href="#" class="active">$</a></li>-->
+																				
+											<li>
+														<a href="http://test.nakshsoft.com/index.php?curr=1" class="active">$</a>
+													  </li><li>
+														<a href="http://test.nakshsoft.com/index.php?curr=2">Sar</a>
+													  </li><li>
+														<a href="http://test.nakshsoft.com/index.php?curr=3">RON</a>
+													  </li><li>
+														<a href="http://test.nakshsoft.com/index.php?curr=4">CAD</a>
+													  </li>									</ul>
+								</div>
+                            </div><!-- /header- currency -->	
+																
+									</div>
+								</div>
+								<div class="header-column justify-content-end">
+									
+									<div class="header-row">
+										<p>
+											<!--<i class="fas fa-map-marker-alt"></i> 1234 Street Name, City Name, US-->
+										   		                                    <!--<a id="modal_trigger" href="#modal"><i class="fas fa-user"></i> Login</a>-->
+		                                    <!--<a href="login.php"><i class="fas fa-user"></i> Login</a>	| 
+											<a href="register.php">Register</a>-->
+                                    	   
+										</p>
+										<div class="header-mini-cart">
+										<a href="http://test.nakshsoft.com/index.php#" onclick="top_ajax_cart()" data-toggle="dropdown">
+											<i class="fas fa-shopping-cart"></i>&nbsp; &nbsp; My Cart <!--(3)-->
+										</a>
+										<div class="dropdown-menu shopping-cart-content" id="top_popup_ajax_cart">
+											<!--<div class="shopping-cart-items">
+												<div class="item pull-left">
+													<img src="http://placehold.it/62x70" alt="Product Name" class="pull-left" />
+													<div class="pull-left">
+														<p>Product Name</p>
+														<p><strong>2x</strong>&nbsp;$149.99</p>
+													</div>
+													<a href="" class="pull-right"><i class="icon-remove-circle pull-left"></i></a>
+												</div>
+												<div class="item pull-left">
+													<img src="http://placehold.it/62x70" alt="Product Name" class="pull-left" />
+													<div class="pull-left">
+														<p>Product Name</p>
+														<p><strong>3x</strong>&nbsp;$57.00</p>
+													</div>
+													<a href="" class="pull-right"><i class="icon-remove-circle pull-left"></i></a>
+												</div>
+												<div class="item pull-left">
+													<img src="http://placehold.it/62x70" alt="Product Name" class="pull-left" />
+													<div class="pull-left">
+														<p>Product Name</p>
+														<p><strong>2x</strong>&nbsp;$112.09</p>
+													</div>
+													<a href="" class="pull-right"><i class="icon-remove-circle pull-left"></i></a>
+												</div>
+												<div class="total pull-left">
+													<table>
+														<tbody class="pull-right">
+															<tr>
+																<td><b>Sub-Total:</b></td>
+																<td>$399.99</td>
+															</tr>
+															<tr>
+																<td><b>Eco Tax (-2.00):</b></td>
+																<td>$6.00</td>
+															</tr>
+															<tr>
+																<td><b>VAT (17.5%):</b></td>
+																<td>$70.00</td>
+															</tr>
+															<tr>
+																<td></td>
+																<td></td>
+															</tr>
+															<tr>
+																<td><b>Total:</b></td>
+																<td>$475.99</td>
+															</tr>
+														</tbody>
+													</table>
+													<a href="#" class="btn pull-right">Checkout</a>
+													<a href="/cart.php" class="btn pull-right">View Cart</a>
+												</div>
+											</div>-->
+										</div>
+									</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="header-container container">
+					<div class="header-row">
+					<div class="header-column">
+					<div class="header-row">
+					<div class="header-logo" style="width: 225px; height: 60px;">
+					<a href="http://test.nakshsoft.com/index.php">
+					<img alt="" width="225" height="60" data-sticky-width="225" data-sticky-height="60" data-sticky-top="0" src="./test.nakshsoft_files/2.png" style="top: 0px; width: 225px; height: 60px;">
+					</a>
+					</div>
+					</div>
+					</div>
+										<div class="header-column">
+																<div class="header-row">
+									<div class="header-nav">
+										<div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
+											<nav class="collapse">
+												<ul class="nav nav-pills" id="mainNav">
+																								
+                        <li><a href="http://test.nakshsoft.com/index.php" class="nav-link active">Home</a></li><li class="dropdown"><a href="http://test.nakshsoft.com/services.php" class="dropdown-item dropdown-toggle">Services <i class="icon-double-angle-right"></i><i class="fas fa-caret-down"></i></a><ul class="dropdown-menu"><li><a class="dropdown-item" href="http://test.nakshsoft.com/services.php">IMEI Services</a></li><li><a class="dropdown-item" href="http://test.nakshsoft.com/fileservices.php">File Services</a></li><li><a class="dropdown-item" href="http://test.nakshsoft.com/serverservices.php">Server Services</a></li></ul></li><li><a href="http://test.nakshsoft.com/contactus.php" class="nav-link">Contact Us</a></li><li><a href="http://test.nakshsoft.com/reviews.php" class="nav-link">Testimonials</a></li><li><a href="http://test.nakshsoft.com/orderlookup.php" class="nav-link">Track Order</a></li><li><a href="http://test.nakshsoft.com/eshop.php" class="nav-link">Products</a></li>                    
+													
+													
+												</ul>
+											</nav>
+										</div>
+										<!--<ul class="header-social-icons social-icons d-none d-sm-block">
+																					</ul>-->
+										
+										<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+			
+			
+			
+			
+         <!--<div id="preloader">
+            <div id="status">
+                &nbsp;
+            </div>
+        </div>-->
+
+
+        <div class="container">
+<div class="row">
+<div id="success-msg" style="min-width: 100%;">&nbsp;</div>
+</div>
+</div>
+<div class="forcefullwidth_wrapper_tp_banner" id="revolutionSlider_forcefullwidth" style="position:relative;width:100%;height:auto;margin-top:0px;margin-bottom:0px"><div class="slider-container rev_slider_wrapper" style="height: 700px; margin-top: 0px; margin-bottom: 0px; position: absolute; overflow: visible; width: 1665px; left: 0px;">
+					<div id="revolutionSlider" class="slider rev_slider revslider-initialised tp-simpleresponsive" data-version="5.4.7" data-plugin-revolution-slider="" data-plugin-options="{&#39;delay&#39;: 9000, &#39;gridwidth&#39;: 800, &#39;gridheight&#39;: 700, &#39;responsiveLevels&#39;: [4096,1200,992,500]}" style="max-height: 700px; margin-top: 0px; margin-bottom: 0px; height: 700px;" data-slideactive="rs-979215">
+						<ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
+						      
+							<li data-transition="fade" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden; z-index: 18; visibility: hidden; opacity: 0; background-color: rgba(255, 255, 255, 0);">
+								<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="data/banners/17.png" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg defaultimg">--><div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;data/banners/17.png&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="data/banners/17.png"></div></div>
+<div class="tp-chs">
+								<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: hidden; left: -149px; top: -95px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption less" data-x="center" data-hoffset="-150" data-y="center" data-voffset="-95" data-start="1300" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.0001; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5001, 0, 0, 1); transform-origin: 50% 50% 0px;" data-transform_in="x:[-300%];opacity:0;s:500;" id="layer-654541359"><img src="./test.nakshsoft_files/slide-title-border.png" alt="" style="width: 0px; height: 0px;"></div></div></div></div>
+
+								<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: hidden; left: 1px; top: -95px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption top-label less2" data-x="center" data-hoffset="0" data-y="center" data-voffset="-95" data-start="500" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 24px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.0001; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -2106, 0, 1); transform-origin: 50% 50% 0px;" data-transform_in="y:[-300%];opacity:0;s:500;" id="layer-259862609"></div></div></div></div>
+
+								<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: hidden; left: 151px; top: -95px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption less3" data-x="center" data-hoffset="150" data-y="center" data-voffset="-95" data-start="1000" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.0001; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5001, 0, 0, 1); transform-origin: 50% 50% 0px;" data-transform_in="x:[300%];opacity:0;s:500;" id="layer-903146526"><img src="./test.nakshsoft_files/slide-title-border.png" alt="" style="width: 0px; height: 0px;"></div></div></div></div>
+
+								<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: hidden; left: 718px; top: 274px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption less4 main-label" data-x="center" data-hoffset="0" data-y="center" data-voffset="-45" data-start="1500" data-whitespace="nowrap" data-transform_in="y:[100%];s:500;" data-transform_out="opacity:0;s:500;" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 62px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 800; font-size: 62px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.0001; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;" data-mask_in="x:0px;y:0px;" id="layer-795101764">banner </div></div></div></div>
+
+								<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: hidden; left: 1px; top: 5px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption less5 bottom-label" data-x="center" data-hoffset="0" data-y="center" data-voffset="5" data-start="2000" data-fontsize="[&#39;20&#39;,&#39;20&#39;,&#39;20&#39;,&#39;30&#39;]" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 20px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 20px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.0001; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 702, 0, 1); transform-origin: 50% 50% 0px;" data-transform_in="y:[100%];opacity:0;s:500;" id="layer-992515892"></div></div></div></div>
+
+								<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: hidden; left: 713px; top: 400px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><a class="tp-caption less6 btn btn-lg btn-primary btn-slider-action" data-hash="" data-hash-offset="85" href="http://test.nakshsoft.com/services.php" data-x="center" data-hoffset="0" data-y="center" data-voffset="80" data-start="2200" data-whitespace="nowrap" data-fontsize="[&#39;22&#39;,&#39;22&#39;,&#39;22&#39;,&#39;32&#39;]" data-transform_in="y:[100%];s:500;" data-transform_out="opacity:0;s:500;" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 20px; border-width: 1px; margin: 0px; padding: 19px 28px; letter-spacing: 0px; font-weight: 600; font-size: 22px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.0001; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;" data-mask_in="x:0px;y:0px;" id="layer-808593673">Get Started Now!</a></div></div></div>
+</div>
+								
+							</li>
+
+							<li data-transition="fade" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
+								<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="data/banners/18.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg defaultimg">--><div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;data/banners/18.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="data/banners/18.jpg"></div></div>
+<div class="tp-chs">
+								<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: -149px; top: -95px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption less" data-x="center" data-hoffset="-150" data-y="center" data-voffset="-95" data-start="1300" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;" data-transform_in="x:[-300%];opacity:0;s:500;" id="layer-369731731"><img src="./test.nakshsoft_files/slide-title-border.png" alt="" style="width: 0px; height: 0px;"></div></div></div></div>
+
+								<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 1px; top: -95px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption top-label less2" data-x="center" data-hoffset="0" data-y="center" data-voffset="-95" data-start="500" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 24px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;" data-transform_in="y:[-300%];opacity:0;s:500;" id="layer-425568091"></div></div></div></div>
+
+								<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 151px; top: -95px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption less3" data-x="center" data-hoffset="150" data-y="center" data-voffset="-95" data-start="1000" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;" data-transform_in="x:[300%];opacity:0;s:500;" id="layer-725931375"><img src="./test.nakshsoft_files/slide-title-border.png" alt="" style="width: 0px; height: 0px;"></div></div></div></div>
+
+								<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 692px; top: 274px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption less4 main-label" data-x="center" data-hoffset="0" data-y="center" data-voffset="-45" data-start="1500" data-whitespace="nowrap" data-transform_in="y:[100%];s:500;" data-transform_out="opacity:0;s:500;" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 62px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 800; font-size: 62px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;" data-mask_in="x:0px;y:0px;" id="layer-982799927">banner 2</div></div></div></div>
+
+								<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 1px; top: 5px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption less5 bottom-label" data-x="center" data-hoffset="0" data-y="center" data-voffset="5" data-start="2000" data-fontsize="[&#39;20&#39;,&#39;20&#39;,&#39;20&#39;,&#39;30&#39;]" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 20px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 20px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.735034; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 186.024, 0, 1); transform-origin: 50% 50% 0px;" data-transform_in="y:[100%];opacity:0;s:500;" id="layer-107442632"></div></div></div></div>
+
+								<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 713px; top: 400px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: translate3d(0px, 0px, 0px);"><a class="tp-caption less6 btn btn-lg btn-primary btn-slider-action" data-hash="" data-hash-offset="85" href="http://test.nakshsoft.com/services.php" data-x="center" data-hoffset="0" data-y="center" data-voffset="80" data-start="2200" data-whitespace="nowrap" data-fontsize="[&#39;22&#39;,&#39;22&#39;,&#39;22&#39;,&#39;32&#39;]" data-transform_in="y:[100%];s:500;" data-transform_out="opacity:0;s:500;" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 20px; border-width: 1px; margin: 0px; padding: 19px 28px; letter-spacing: 0px; font-weight: 600; font-size: 22px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 55.0937, 0, 1); transform-origin: 50% 50% 0px;" data-mask_in="x:0px;y:0px;" id="layer-924652447">Get Started Now!</a></div></div></div>
+</div>
+								
+							</li>
+						</ul>
+					
+<div class="tp-loader spinner3" style="display: none;"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="tp-bannertimer" style="visibility: hidden; width: 14.6444%; transform: translate3d(0px, 0px, 0px);"></div><div class="tp-leftarrow tparrows" style="top: 50%; transform: matrix(1, 0, 0, 1, 30, -20); left: 0px; visibility: inherit; opacity: 0.071824;"></div><div class="tp-rightarrow tparrows" style="top: 50%; transform: matrix(1, 0, 0, 1, -70, -20); left: 100%; visibility: inherit; opacity: 0.071824;"></div></div>
+				</div><div class="tp-fullwidth-forcer" style="width: 100%; height: 700px;"></div></div>
+				1<style>#footer {margin-top: 0px;}</style>
+
+
+<div class="home-intro" id="home-intro">
+	<div class="container">
+		
+	
+		 
+
+		<div class="row align-items-center">
+			<div class="col-lg-10">
+				<p>
+					 <em>Direct Source</em>
+					<span></span></p><p>We supply wholesale unlocking to 60% of unlocking websites we direct source for allmost listed services</p>
+
+
+
+<p>&nbsp;</p>
+
+
+				<p></p>
+			</div>
+
+			<div class="col-lg-2">
+				<a href="http://test.nakshsoft.com/services.php" data-hash="" class="btn btn-primary mr-3 appear-animation animated fadeInDown appear-animation-visible" data-appear-animation="fadeInDown" data-appear-animation-delay="300" style="animation-delay: 300ms;">view our services</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+<section class="fetproduct">
+	<div class="fetprod">
+		<h3 class="ps-section__title" data-mask="features">- New Product</h3>
+	</div>
+	<div class="container">
+		
+		<div class="row">	
+				
+				<div class="col-md-3">
+			<div class="product-cellnew">
+			<div class="product">
+				<div class="new-label new-top-right"></div><div class="sale-label sale-top-left"></div>				
+				<div class="product-image">
+					<a href="http://test.nakshsoft.com/product.php?id=1">
+													<img src="./test.nakshsoft_files/1.jpg" alt="image" width="100%">
+											</a>
+				</div>
+
+				<div class="product-info-height"></div>
+
+				<div class="product-info">
+					<h4><a href="http://test.nakshsoft.com/product.php?id=1">iPhone OG Ear-Phones</a></h4>
+					<div class="product-rating">
+					  
+										  <div>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star"></span>
+											  </div>
+					  
+					</div>
+
+					<div class="row-fluid">
+					<div class="span4">
+												<a href="javascript:void(0);" onclick="addToCartOne(1);" class="product-shopping-cart">
+								<i class="fa fa-shopping-cart"></i> Add to Cart
+							</a>
+										</div>
+					
+					<!--<p class="product-price"><span>500$</span> 450$</p>-->
+					<p class="product-price">						$ 20</p>
+					</div>
+					
+					
+				</div>
+			</div>
+			</div>
+		</div>
+				<div class="col-md-3">
+			<div class="product-cellnew">
+			<div class="product">
+				<div class="new-label new-top-right"></div>				
+				<div class="product-image">
+					<a href="http://test.nakshsoft.com/product.php?id=2">
+													<img src="./test.nakshsoft_files/2.jpg" alt="image" width="100%">
+											</a>
+				</div>
+
+				<div class="product-info-height"></div>
+
+				<div class="product-info">
+					<h4><a href="http://test.nakshsoft.com/product.php?id=2">GPG Hub Pro</a></h4>
+					<div class="product-rating">
+					  
+										  <div>
+												<span class="fa fa-star"></span>
+												<span class="fa fa-star"></span>
+												<span class="fa fa-star"></span>
+												<span class="fa fa-star"></span>
+												<span class="fa fa-star"></span>
+											  </div>
+					  
+					</div>
+
+					<div class="row-fluid">
+					<div class="span4">
+												<a href="javascript:void(0);" onclick="addToCartOne(2);" class="product-shopping-cart">
+								<i class="fa fa-shopping-cart"></i> Add to Cart
+							</a>
+										</div>
+					
+					<!--<p class="product-price"><span>500$</span> 450$</p>-->
+					<p class="product-price">						$ 50</p>
+					</div>
+					
+					
+				</div>
+			</div>
+			</div>
+		</div>
+				<div class="col-md-3">
+			<div class="product-cellnew">
+			<div class="product">
+				<div class="new-label new-top-right"></div><div class="sale-label sale-top-left"></div>				
+				<div class="product-image">
+					<a href="http://test.nakshsoft.com/product.php?id=3">
+													<img src="./test.nakshsoft_files/3.jpg" alt="image" width="100%">
+											</a>
+				</div>
+
+				<div class="product-info-height"></div>
+
+				<div class="product-info">
+					<h4><a href="http://test.nakshsoft.com/product.php?id=3">iPhone OG charger</a></h4>
+					<div class="product-rating">
+					  
+										  <div>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+											  </div>
+					  
+					</div>
+
+					<div class="row-fluid">
+					<div class="span4">
+												<a href="javascript:void(0);" onclick="addToCartOne(3);" class="product-shopping-cart">
+								<i class="fa fa-shopping-cart"></i> Add to Cart
+							</a>
+										</div>
+					
+					<!--<p class="product-price"><span>500$</span> 450$</p>-->
+					<p class="product-price">						$ 40</p>
+					</div>
+					
+					
+				</div>
+			</div>
+			</div>
+		</div>
+				<div class="col-md-3">
+			<div class="product-cellnew">
+			<div class="product">
+				<div class="new-label new-top-right"></div>				
+				<div class="product-image">
+					<a href="http://test.nakshsoft.com/product.php?id=4">
+													<img src="./test.nakshsoft_files/4.jpg" alt="image" width="100%">
+											</a>
+				</div>
+
+				<div class="product-info-height"></div>
+
+				<div class="product-info">
+					<h4><a href="http://test.nakshsoft.com/product.php?id=4">iPhone Fast Usb Charging Cable.</a></h4>
+					<div class="product-rating">
+					  
+										  <div>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star"></span>
+												<span class="fa fa-star"></span>
+												<span class="fa fa-star"></span>
+											  </div>
+					  
+					</div>
+
+					<div class="row-fluid">
+					<div class="span4">
+												<a href="javascript:void(0);" onclick="addToCartOne(4);" class="product-shopping-cart">
+								<i class="fa fa-shopping-cart"></i> Add to Cart
+							</a>
+										</div>
+					
+					<!--<p class="product-price"><span>500$</span> 450$</p>-->
+					<p class="product-price">						$ 30</p>
+					</div>
+					
+					
+				</div>
+			</div>
+			</div>
+		</div>
+			</div>
+	</div>
+</section>
+
+
+		
+		<section class="section section-no-border mt-0">		
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<!--<h2>Our <strong>Services</strong></h2>-->
+					</div>
+				</div>
+				
+				<div class="row">
+				   					<div class="col-lg-4">
+						<div class="feature-box feature-box-style-2 appear-animation animated fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="0" style="animation-delay: 0ms;">
+							<div class="feature-box-icon">
+								<img src="./test.nakshsoft_files/21.png">
+							</div>
+							<div class="feature-box-info">
+								<h4 class="mb-2"><a href="http://test.nakshsoft.com/page.php?id=21"><span>Developers API</span></a></h4>
+								<p class="mb-4"><a href="http://test.nakshsoft.com/page.php?id=21"></a></p><p><a href="http://test.nakshsoft.com/page.php?id=21">We support developers API to&nbsp;communicate with our server to automatically place orders &amp;&nbsp;reply orders from your server or ...</a></p>
+							</div>
+						</div>
+					</div>
+
+				    					<div class="col-lg-4">
+						<div class="feature-box feature-box-style-2 appear-animation animated fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="0" style="animation-delay: 0ms;">
+							<div class="feature-box-icon">
+								<img src="./test.nakshsoft_files/18.png">
+							</div>
+							<div class="feature-box-info">
+								<h4 class="mb-2"><a href="http://test.nakshsoft.com/page.php?id=18"><span>Refunds</span></a></h4>
+								<p class="mb-4"><a href="http://test.nakshsoft.com/page.php?id=18"></a></p><p><a href="http://test.nakshsoft.com/page.php?id=18">Refunds If no unlock code is found for a particular phone, a refund will be processed within 24 hours of us becoming aware ...</a></p>
+							</div>
+						</div>
+					</div>
+
+			        					<div class="col-lg-4">
+						<div class="feature-box feature-box-style-2 appear-animation animated fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="0" style="animation-delay: 0ms;">
+							<div class="feature-box-icon">
+								<img src="./test.nakshsoft_files/17.png">
+							</div>
+							<div class="feature-box-info">
+								<h4 class="mb-2"><a href="http://test.nakshsoft.com/page.php?id=17"><span>Delivery Times and Cancellation</span></a></h4>
+								<p class="mb-4"><a href="http://test.nakshsoft.com/page.php?id=17"></a></p><p><a href="http://test.nakshsoft.com/page.php?id=17">All unlock codes and unlock confirmations are sent by email to the email address that the customer enters on the order form. ...</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt-lg-3">
+
+			        					<div class="col-lg-4">
+						<div class="feature-box feature-box-style-2 appear-animation animated fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="300" style="animation-delay: 300ms;">
+							<div class="feature-box-icon">
+								<img src="./test.nakshsoft_files/22.png">
+							</div>
+							<div class="feature-box-info">
+								<h4 class="mb-2"><a href="http://test.nakshsoft.com/page.php?id=22"><span>CREDITS STATEMENT</span></a></h4>
+								<p class="mb-4"><a href="http://test.nakshsoft.com/page.php?id=22"></a></p><p><a href="http://test.nakshsoft.com/page.php?id=22">There is lifetime history available for all credit transactions so you can easily track how much you spend with us and check ...</a></p>
+							</div>
+						</div>
+					</div>
+					
+										<div class="col-lg-4">
+						<div class="feature-box feature-box-style-2 appear-animation animated fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="300" style="animation-delay: 300ms;">
+							<div class="feature-box-icon">
+								<img src="./test.nakshsoft_files/19.png">
+							</div>
+							<div class="feature-box-info">
+								<h4 class="mb-2"><a href="http://test.nakshsoft.com/page.php?id=19"><span>Fraud Protection</span></a></h4>
+								<p class="mb-4"><a href="http://test.nakshsoft.com/page.php?id=19"></a></p><p><a href="http://test.nakshsoft.com/page.php?id=19">As a result of the so many fraudulent orders that we receive each day, it is imperative that we take all necessary ...</a></p>
+							</div>
+						</div>
+					</div>
+
+			        					<div class="col-lg-4">
+						<div class="feature-box feature-box-style-2 appear-animation animated fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="300" style="animation-delay: 300ms;">
+							<div class="feature-box-icon">
+								<img src="./test.nakshsoft_files/20.png">
+							</div>
+							<div class="feature-box-info">
+								<h4 class="mb-2"><a href="http://test.nakshsoft.com/page.php?id=20"><span>Why Us?</span></a></h4>
+								<p class="mb-4"><a href="http://test.nakshsoft.com/page.php?id=20"></a></p><p><a href="http://test.nakshsoft.com/page.php?id=20">Our main focus is wholesale, seen other sites selling imei unlocks? Chances are big they buy the unlock from us: We supply 70% ...</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section> 
+
+ 				
+				
+ 
+	        
+	            <div class="container">
+					<div class="row mb-5">
+					    <div class="col-lg-12"><h2 class="mb-5"><strong>Who</strong> We Are</h2></div>
+						<div class="col-lg-4">
+							
+							<img class="img-fluid" src="./test.nakshsoft_files/7.png">
+							
+						</div>
+						<div class="col-lg-8">
+						    <p>We are providers of remote IMEI unlock
+
+
+
+codes providing an easy to use system,
+
+
+
+fast turnaround times and excellent
+
+
+
+customer service to thousands of
+
+
+
+satisfied customers and reseller
+
+
+
+worldwide. We have direct source for
+
+
+
+many of the remote IMEI unlock codes
+
+
+
+we provide so that in turn guarantees the
+
+
+
+lowest possible prices available to you.
+
+
+
+Our service is so easy to use.
+
+</p>							<br>
+                            <div style="float: right;">
+							<a href="http://info.flagcounter.com/dI1b"><img src="./test.nakshsoft_files/saved_resource" alt="Flag Counter" border="0"></a>						    </div>
+						</div>
+					</div>
+				</div>
+			
+	 
+
+
+    
+<div class="container">
+	<div class="row center">
+            <div class="col-md-12">
+                <h2 class="mb-none word-rotator-title mt-lg">
+                    We Unlock All
+                    <strong>
+                        <div class="slidingVertical">
+							<span>Major</span>
+							<span>Brands</span>
+							<span>Major</span>
+							<span>Brands</span>
+						</div>
+                    </strong>
+                </h2>
+            </div>
+			<div class="col-md-12">
+				<div class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-init" data-plugin-options="{&#39;items&#39;: 6, &#39;autoplay&#39;: true, &#39;autoplayTimeout&#39;: 3000}">
+						
+						
+						
+						
+						
+						
+						
+						
+				<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1665px, 0px, 0px); transition: all 0.25s ease 0s; width: 3700px;"><div class="owl-item cloned" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/VOPVEmB7Vs.png"></div></div><div class="owl-item cloned" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/YrdYCN957t.png"></div></div><div class="owl-item cloned" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/4Aqh1cmqxK.png"></div></div><div class="owl-item cloned" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/JT0RHeBIj2.png"></div></div><div class="owl-item cloned" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/5GReAO4xcN.png"></div></div><div class="owl-item cloned" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/mwufgqpGDd.png"></div></div><div class="owl-item" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/nGyhJ9Kf5f.png"></div></div><div class="owl-item" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/LxOja8WE9o.png"></div></div><div class="owl-item" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/VOPVEmB7Vs.png"></div></div><div class="owl-item active" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/YrdYCN957t.png"></div></div><div class="owl-item active" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/4Aqh1cmqxK.png"></div></div><div class="owl-item active" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/JT0RHeBIj2.png"></div></div><div class="owl-item active" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/5GReAO4xcN.png"></div></div><div class="owl-item active" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/mwufgqpGDd.png"></div></div><div class="owl-item cloned active" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/nGyhJ9Kf5f.png"></div></div><div class="owl-item cloned" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/LxOja8WE9o.png"></div></div><div class="owl-item cloned" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/VOPVEmB7Vs.png"></div></div><div class="owl-item cloned" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/YrdYCN957t.png"></div></div><div class="owl-item cloned" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/4Aqh1cmqxK.png"></div></div><div class="owl-item cloned" style="width: 185px;"><div><img class="img-responsive" src="./test.nakshsoft_files/JT0RHeBIj2.png"></div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"></button><button type="button" role="presentation" class="owl-next"></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+			</div>
+        </div>
+		 		<section class="parallex" style="background-image:url(&#39;template/template2/images/parallax-2.jpg&#39;);">
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="owl-carousel owl-theme mb-0 owl-loaded owl-drag owl-carousel-init" data-plugin-options="{&#39;items&#39;: 1}">
+																			
+																						
+																					<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1840px, 0px, 0px); transition: all 0s ease 0s; width: 5520px;"><div class="owl-item cloned" style="width: 920px;"><div>
+												<div class="col">
+													<div class="testimonial">
+														<div class="testimonial-image">
+															<img src="./test.nakshsoft_files/avatar1.png" class="img-responsive img-circle" alt="">
+														</div>
+														<blockquote>
+															<p>Great Work Keep It Up</p>
+														</blockquote>
+														<div class="testimonial-author">															
+															<div class="customer-name">Ricky</div>
+															<div class="date">22 January 2014</div>
+														</div>
+													</div>
+												</div>
+											</div></div><div class="owl-item cloned" style="width: 920px;"><div>
+												<div class="col">
+													<div class="testimonial">
+														<div class="testimonial-image">
+															<img src="./test.nakshsoft_files/avatar1.png" class="img-responsive img-circle" alt="">
+														</div>
+														<blockquote>
+															<p>Yes Its True Your Services Really Very Fast </p>
+														</blockquote>
+														<div class="testimonial-author">															
+															<div class="customer-name">Hector Martin</div>
+															<div class="date">02 January 2014</div>
+														</div>
+													</div>
+												</div>
+											</div></div><div class="owl-item active" style="width: 920px;"><div>
+												<div class="col">
+													<div class="testimonial">
+														<div class="testimonial-image">
+															<img src="./test.nakshsoft_files/avatar1.png" class="img-responsive img-circle" alt="">
+														</div>
+														<blockquote>
+															<p>Great Work Keep It Up</p>
+														</blockquote>
+														<div class="testimonial-author">															
+															<div class="customer-name">Ricky</div>
+															<div class="date">22 January 2014</div>
+														</div>
+													</div>
+												</div>
+											</div></div><div class="owl-item" style="width: 920px;"><div>
+												<div class="col">
+													<div class="testimonial">
+														<div class="testimonial-image">
+															<img src="./test.nakshsoft_files/avatar1.png" class="img-responsive img-circle" alt="">
+														</div>
+														<blockquote>
+															<p>Yes Its True Your Services Really Very Fast </p>
+														</blockquote>
+														<div class="testimonial-author">															
+															<div class="customer-name">Hector Martin</div>
+															<div class="date">02 January 2014</div>
+														</div>
+													</div>
+												</div>
+											</div></div><div class="owl-item cloned" style="width: 920px;"><div>
+												<div class="col">
+													<div class="testimonial">
+														<div class="testimonial-image">
+															<img src="./test.nakshsoft_files/avatar1.png" class="img-responsive img-circle" alt="">
+														</div>
+														<blockquote>
+															<p>Great Work Keep It Up</p>
+														</blockquote>
+														<div class="testimonial-author">															
+															<div class="customer-name">Ricky</div>
+															<div class="date">22 January 2014</div>
+														</div>
+													</div>
+												</div>
+											</div></div><div class="owl-item cloned" style="width: 920px;"><div>
+												<div class="col">
+													<div class="testimonial">
+														<div class="testimonial-image">
+															<img src="./test.nakshsoft_files/avatar1.png" class="img-responsive img-circle" alt="">
+														</div>
+														<blockquote>
+															<p>Yes Its True Your Services Really Very Fast </p>
+														</blockquote>
+														<div class="testimonial-author">															
+															<div class="customer-name">Hector Martin</div>
+															<div class="date">02 January 2014</div>
+														</div>
+													</div>
+												</div>
+											</div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"></button><button type="button" role="presentation" class="owl-next"></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+				</div>
+			</div>
+		</section>
+</div>
+ 
+<script type="text/javascript">
+
+
+
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+
+  _gaq.push(['_trackPageview']);
+
+
+
+  (function() {
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+  })();
+
+
+
+</script>			
+			
+
+		</div>
+        
+		
+			<div id="modal" class="popupContainer" style="display:none;">
+		<header class="popupHeader">
+			<span class="header_title">Login</span>
+			<span class="modal_close"><i class="fa fa-times"></i></span>
+		</header>
+		
+		<section class="popupBody">
+			<!-- Social Login -->
+			
+
+			<!-- Username & Password Login form -->
+			<div class="user_login">
+				<form action="http://test.nakshsoft.com/login.php" method="POST">
+					<input placeholder="Username" type="text" name="txtUserName" required="">
+					<br>
+
+					<input placeholder="Password:*" type="password" name="txtPassword">
+					<br>
+
+					<div class="checkbox input">
+						<input id="remember" name="chkRmbrMe" type="checkbox">
+						<label for="remember">Remember me on this computer</label>
+					</div>
+
+					<div class="action_btns">
+						<a href="http://test.nakshsoft.com/index.php" class="thm-btn">Back</a>
+                        <input type="submit" class="thm-btn" value="Login">
+					</div>
+				</form>
+				<div class="bt-button">
+				    <a href="http://test.nakshsoft.com/register.php">Sign Up for free</a>
+				    <a href="http://test.nakshsoft.com/forgotpassword.php">Forget Password</a>		
+				</div>
+				
+			</div>
+
+			
+			
+		</section>
+	</div>
+    
+
+        <footer id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="footer-ribbon">
+							<span>Get in Touch</span>
+						</div>
+						<div class="col-lg-3">
+							<div class="newsletter">
+							    <!-- about -->
+								<h4>About Us</h4>
+								
+
+                            <p>Every cellular device is identified by a unique number called the IMEI (International Mobile Equipment Identity) which can be found by looking behind the battery of your or by pressing *#06# on the keypad of your device. Simple provide us with the IMEI, the make, model of the device and the network it is locked to. Our system will automatically e-mail the results to you once it is completed along with the instructions.</p>
+                                                <!--/ about -->
+
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<h4>Latest News</h4>
+							<div class="cont">
+                                   
+		<marquee scrollamount="1" direction="up" loop="true" onmouseover="this.stop();" onmouseout="this.start();" style="height:275px;"> 
+        <ul>
+	<li><p><em><strong>Any Wrong Submitted IMEI In Any iPhone Unlock Service No Refund</strong></em></p>
+
+</li>		</ul>
+	 </marquee>
+      <!-- end right container -->
+      <div class="clear"></div>
+
+    <!-- end home bottom -->
+    
+
+    
+                            </div>
+						</div>
+						<div class="col-lg-4">							<div class="contact-details">
+								<h4>Contact Us</h4>
+								<ul class="contact">
+									<li><p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Naksh-Soft<br>
+Central Plaza <br>
+Kawloon City <br>
+Hongkong.</p></li>
+									<li><p><i class="fas fa-phone"></i> <strong>Phone:</strong> +919803283123</p></li>
+									<li><p><i class="far fa-envelope"></i> <strong>Email:</strong> <a href="mailto:admin@nakshsoft.com">admin@nakshsoft.com</a></p></li>
+									<li><p>PRO-NAKSH-SOFT</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<h4>Follow Us</h4>
+							
+							<ul class="social-icons">
+                                       
+                         
+                        <li class="social-icons-facebook"><a href="https://www.facebook.com/" target="_blank" title=""><i class="fab fa-facebook"></i></a></li>						
+                            
+                        </ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-2">
+								<a href="http://test.nakshsoft.com/index.html" class="logo">
+									<img alt="Logo" class="img-fluid" src="./test.nakshsoft_files/2.png">
+								</a>
+							</div>
+							<div class="col-lg-4">
+								<p>2016 © yoursite.com All Rights Resrved By Yoursite</p>
+							</div>
+							<div class="col-lg-6">
+								<nav id="sub-menu">
+									<ul>
+										<li><a class="nav-link" href="http://test.nakshsoft.com/services.php">Services <i class="icon-double-angle-right"></i></a></li> <li><a class="nav-link" href="http://test.nakshsoft.com/register.php">Register</a></li> <li><a class="nav-link" href="http://test.nakshsoft.com/login.php">Login</a></li> <li><a class="nav-link" href="http://test.nakshsoft.com/contactus.php">Contact Us</a></li> <li><a class="nav-link" href="http://test.nakshsoft.com/page.php?id=10">Terms</a></li> <li><a class="nav-link" href="http://test.nakshsoft.com/eshop.php">Products</a></li>   
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+        <!-- Vendor -->
+		<script src="./test.nakshsoft_files/jquery.min.js.download"></script>
+		<script src="./test.nakshsoft_files/jquery.appear.min.js.download"></script>
+		<script src="./test.nakshsoft_files/jquery.easing.min.js.download"></script>
+		<script src="./test.nakshsoft_files/jquery-cookie.min.js.download"></script>
+		<script src="./test.nakshsoft_files/popper.min.js.download"></script>
+		<script src="./test.nakshsoft_files/bootstrap.min.js.download"></script>
+		<script src="./test.nakshsoft_files/common.min.js.download"></script>
+		<script src="./test.nakshsoft_files/jquery.validation.min.js.download"></script>
+		<script src="./test.nakshsoft_files/jquery.easy-pie-chart.min.js.download"></script>
+		<script src="./test.nakshsoft_files/jquery.gmap.min.js.download"></script>
+		<script src="./test.nakshsoft_files/jquery.lazyload.min.js.download"></script>
+		<script src="./test.nakshsoft_files/jquery.isotope.min.js.download"></script>
+		<script src="./test.nakshsoft_files/owl.carousel.min.js.download"></script>
+		<script src="./test.nakshsoft_files/jquery.magnific-popup.min.js.download"></script>
+		<script src="./test.nakshsoft_files/vide.min.js.download"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="./test.nakshsoft_files/theme.js.download"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="./test.nakshsoft_files/jquery.themepunch.tools.min.js.download"></script>
+		<script src="./test.nakshsoft_files/jquery.themepunch.revolution.min.js.download"></script>
+		<script src="./test.nakshsoft_files/jquery.flipshow.min.js.download"></script>
+		<script src="./test.nakshsoft_files/view.home.js.download"></script>
+		
+		<!-- Theme Custom -->
+		<!-- <script src="template/template2/assets/js/custom.js"></script> -->
+		
+		<!-- Theme Initialization Files -->
+		<script src="./test.nakshsoft_files/theme.init.js.download"></script><a class="scroll-to-top hidden-mobile visible" href="http://test.nakshsoft.com/index.php#"><i class="fas fa-chevron-up"></i></a>
+
+		<!-- Examples -->
+		<script src="./test.nakshsoft_files/examples.demos.js.download"></script>
+		
+		<script src="./test.nakshsoft_files/jquery.marquee.min.js.download"></script>	
+
+		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+			ga('create', 'UA-12345678-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		 -->
+		 
+		 <script>function language(){
+    $('.language-selector > span').click(function(){
+       $('.language-selector > div').slideToggle(); 
+    });
+     $('.language-selector > div a').click(function(){
+       $('.language-selector > div').slideUp();
+    });
+    
+}
+// instance of fuction while Document ready event	
+
+		language();
+        
+
+jQuery(document).mouseup(function (e)
+{
+    (function ($) {
+    var container = $(".language-selector");
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        $('.language-selector > div').slideUp();
+    }
+	var container2 = $(".login-popover");
+    if (!container2.is(e.target) // if the target of the click isn't the container...
+        && container2.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        $('.account-outer > div').slideUp();
+    }
+	
+    })(jQuery);
+});
+
+
+
+/*custom jQuery 3oct18*/
+
+jQuery('.sub-category').hide();
+jQuery('.ps-list--checked>li>a').click(function(e){
+	e.preventDefault();
+	if(jQuery(this).closest('li').find('ul.sub-category:visible').length)
+        jQuery(this).closest('li').find('ul.sub-category').slideUp(200);
+    else
+        jQuery(this).closest('li').find('ul.sub-category').slideDown(200);
+});
+
+</script>
+<script>
+    function top_ajax_cart(){
+		$('#top_popup_ajax_cart').html("<span><img src='template/template2/assets/css/images/bx_loader.gif' /></span>");
+		loadCartpopup();
+        setTimeout( function(){ 
+        	loadCartpopup();
+          }  , 1000 );
+        
+	}
+
+</script>
+
+
+
+ 		<!-- <script src="assets/js/vendor/jquery.js"></script> -->
+        <script src="./test.nakshsoft_files/jquery.easing.1.3.js.download"></script>
+        <script src="./test.nakshsoft_files/bootstrap.js.download"></script>
+        <script src="./test.nakshsoft_files/jquery.magnific-popup.js.download"></script>
+        <script src="./test.nakshsoft_files/jquery.grid.js.download"></script>
+        <script src="./test.nakshsoft_files/jquery.flexisel.js.download"></script>
+        <script src="./test.nakshsoft_files/jquery.bxslider.min.js.download"></script>
+        <script src="./test.nakshsoft_files/jquery.quicksand.js.download"></script>
+        <script src="./test.nakshsoft_files/jquery.transit.js.download"></script>
+        <script src="./test.nakshsoft_files/jquery.jcountdown.js.download"></script>
+        <script src="./test.nakshsoft_files/jquery.jPages.js.download"></script>
+        <script src="./test.nakshsoft_files/jquery.formstyler.js.download"></script>
+        <script src="./test.nakshsoft_files/responsive-navbar.js.download"></script>
+
+		
+        <script src="./test.nakshsoft_files/custom.js.download"></script>
+		<script src="./test.nakshsoft_files/main.js.download"></script>
+		
+		<!--<script src="template/template2/assets/js/userglobal.js"></script>-->
+
+
+
+	
+
+<div style="font-family:Arial; position:fixed;left:0;bottom:0;font-size:12px;background:#E7E7E0; color:#000000; padding:0px 10px;display:block !important;z-index:999;">Powered By <a href="http://www.nakshsoft.com/" style="display: normal; color:#406B;" target="_blank">NAKSH-SOFT</a></div>
+
+  <section class="header_top_part" style="width: 100% !important;">
+	
+	<div style="position: fixed;
+width: 100%;
+padding-top: 12px;
+left: 0;
+right:0;
+bottom:0;
+z-index: 1880px; color: white; background: rgba(3,3,3,.6); "> 
+		     
+		<ul class="marquee" data-duplicated="true"><div style="width: 100000px; margin-left: 1625px; animation: marqueeAnimation-6100064 45.3412s linear 1s 1 normal none running;" class="js-marquee-wrapper"><div class="js-marquee" style="margin-right: 20px; float: left;">
+			<li style="margin-left: -50%; display: inline-block"></li>
+			<li style="display: inline-block; vertical-align: top; margin-right: 22px;  margin-left: 122px;"><span style="display: inline-block;"><p><span style="color:#B22222"><strong>Unlocking + E-Commerce Website With 1st Year Free Hosting&nbsp;Just In 299$</strong></span></p>
+</span><span style="display: inline-block;">    </span></li><li style="display: inline-block; vertical-align: top; color: #0088cc;;  margin-right: 37px; ">2018-10-05  |  </li> 
+			
+		</div><div class="js-marquee" style="margin-right: 20px; float: left;">
+			<li style="margin-left: -50%; display: inline-block"></li>
+			<li style="display: inline-block; vertical-align: top; margin-right: 22px;  margin-left: 122px;"><span style="display: inline-block;"><p><span style="color:#B22222"><strong>Unlocking + E-Commerce Website With 1st Year Free Hosting&nbsp;Just In 299$</strong></span></p>
+</span><span style="display: inline-block;">    </span></li><li style="display: inline-block; vertical-align: top; color: #0088cc;;  margin-right: 37px; ">2018-10-05  |  </li> 
+			
+		</div><style>@-webkit-keyframes marqueeAnimation-6100064  { 100%  {margin-left:-793.797px}}</style></div></ul> 
+	</div> <!-- end right container --> 
+	<div class="clear"></div> <!-- end home bottom -->
+</section>
+<script>
+	$mq = $('.marquee').marquee({
+		duration: 20000,
+	});
+
+	//stop
+	$mq.marquee('start');
+
+	//on hover start
+	$mq.hover(function(){
+	  $mq.marquee('pause');
+	}, function(){
+	  $mq.marquee('resume');
+	})
+</script>
+
+ 
+<div class="holder"></div></body></html>
